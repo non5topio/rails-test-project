@@ -112,4 +112,33 @@ class UserTest < ActiveSupport::TestCase
       assert_not michael.feed.include?(post_unfollowed)
     end
   end
+
+  test "password reset should be expired just after 2 hours after sent" do
+    @user.save
+    @user.create_reset_digest
+    # Travel slightly into the past relative to 2 hours ago
+    travel_to 2.hours.ago - 1.second do
+      @user.update_attribute(:reset_sent_at, Time.zone.now)
+    end
+    assert @user.password_reset_expired?
+  end
+
+
+  test "password should be valid when exactly minimum length" do
+    @user.password = @user.password_confirmation = "a" * 6
+    assert @user.valid?
+  end
+
+
+  test "email should be valid when exactly maximum length" do
+    @user.email = ("a" * 243) + "@example.com" # 243 + 1 + 7 + 4 = 255
+    assert @user.valid?
+  end
+
+
+  test "name should be valid when exactly maximum length" do
+    @user.name = "a" * 50
+    assert @user.valid?
+  end
+
 end
