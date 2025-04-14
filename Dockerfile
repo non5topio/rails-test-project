@@ -1,4 +1,4 @@
-FROM ruby:3.1.2
+FROM ruby:3.1.2 AS test
 
 # Install dependencies
 RUN apt-get update -qq && apt-get install -y \
