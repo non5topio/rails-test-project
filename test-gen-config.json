@@ -8,18 +8,18 @@
       "test-env-docker-stage": "test",
       "build-test-env-docker-stage-script-path": "tool/build-test-env-docker-stage.sh",
       "test-files-folders": [
-        "index_test.ts"
+        "test/models"
       ],
       "source-test-file-paths": [
         {
-          "source-file-path": "index.ts",
-          "test-file-path": "index_test.ts"
+          "source-file-path": "app/models/user.rb",
+          "test-file-path": "test/models/user_test.rb"
         }
       ],
-      "test-command": "npm run test",
+      "test-command": "bundle exec rails test",
       "coverage-type": "lcov",
       "code-coverage-report-path": "coverage/lcov.info",
-      "desired-coverage": 90,
+      "desired-coverage": 100,
       "max-iterations": 1,
       "max-number-of-test-cases": 6
     }
