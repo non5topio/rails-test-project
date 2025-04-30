@@ -1,0 +1,270 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 367B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ruby:3.1.2
+#2 DONE 1.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/ruby:3.1.2@sha256:7681a3d37560dbe8ff7d0a38f3ce35971595426f0fe2f5709352d7f7a5679255
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 305.86kB 0.2s done
+#5 DONE 0.3s
+
+#6 [2/5] RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+#6 CACHED
+
+#7 [3/5] WORKDIR /app
+#7 CACHED
+
+#8 [4/5] ADD . /app
+#8 DONE 0.7s
+
+#9 [5/5] RUN bundle install
+#9 0.583 Bundler 2.3.7 is running, but your lockfile was generated with 2.3.22. Installing Bundler 2.3.22 and restarting using that version.
+#9 4.055 Fetching gem metadata from https://rubygems.org/.
+#9 4.143 Fetching bundler 2.3.22
+#9 4.301 Installing bundler 2.3.22
+#9 5.827 Fetching gem metadata from https://rubygems.org/.........
+#9 11.26 Fetching rake 13.1.0
+#9 11.37 Installing rake 13.1.0
+#9 11.39 Fetching concurrent-ruby 1.2.3
+#9 11.39 Using minitest 5.15.0
+#9 11.39 Fetching racc 1.7.3
+#9 11.40 Fetching websocket-extensions 0.1.5
+#9 11.40 Fetching builder 3.2.4
+#9 11.40 Fetching erubi 1.12.0
+#9 11.41 Fetching crass 1.0.6
+#9 11.41 Fetching rack 2.2.9
+#9 11.41 Fetching nio4r 2.7.1
+#9 11.45 Installing builder 3.2.4
+#9 11.47 Installing crass 1.0.6
+#9 11.48 Installing erubi 1.12.0
+#9 11.49 Installing racc 1.7.3 with native extensions
+#9 11.52 Fetching marcel 1.0.4
+#9 11.54 Fetching mini_mime 1.1.5
+#9 11.58 Fetching date 3.3.4
+#9 11.59 Installing marcel 1.0.4
+#9 11.61 Installing mini_mime 1.1.5
+#9 11.67 Installing concurrent-ruby 1.2.3
+#9 11.70 Fetching timeout 0.4.1
+#9 11.72 Installing websocket-extensions 0.1.5
+#9 11.76 Installing date 3.3.4 with native extensions
+#9 11.80 Fetching public_suffix 5.0.4
+#9 11.81 Fetching ansi 1.5.0
+#9 11.85 Installing nio4r 2.7.1 with native extensions
+#9 11.85 Installing rack 2.2.9
+#9 11.93 Installing public_suffix 5.0.4
+#9 12.02 Installing timeout 0.4.1
+#9 12.07 Fetching execjs 2.9.1
+#9 12.10 Fetching aws-eventstream 1.3.0
+#9 12.11 Installing ansi 1.5.0
+#9 12.16 Installing execjs 2.9.1
+#9 12.17 Installing aws-eventstream 1.3.0
+#9 12.25 Fetching aws-partitions 1.901.0
+#9 12.29 Fetching jmespath 1.6.2
+#9 12.31 Fetching bcrypt 3.1.18
+#9 12.35 Fetching bindex 0.8.1
+#9 12.38 Fetching msgpack 1.7.2
+#9 12.49 Installing bindex 0.8.1 with native extensions
+#9 12.54 Installing jmespath 1.6.2
+#9 12.68 Fetching ffi 1.16.3
+#9 12.76 Installing aws-partitions 1.901.0
+#9 12.85 Installing bcrypt 3.1.18 with native extensions
+#9 12.86 Installing msgpack 1.7.2 with native extensions
+#9 12.91 Fetching will_paginate 3.3.1
+#9 13.29 Installing will_paginate 3.3.1
+#9 13.93 Using bundler 2.3.22
+#9 13.94 Using matrix 0.4.2
+#9 13.96 Fetching regexp_parser 2.9.0
+#9 14.23 Installing ffi 1.16.3 with native extensions
+#9 14.36 Installing regexp_parser 2.9.0
+#9 14.72 Fetching childprocess 4.1.0
+#9 14.81 Fetching coderay 1.1.3
+#9 14.93 Installing childprocess 4.1.0
+#9 14.98 Installing coderay 1.1.3
+#9 15.25 Fetching stringio 3.1.0
+#9 15.29 Fetching io-console 0.7.2
+#9 15.34 Installing stringio 3.1.0 with native extensions
+#9 15.40 Installing io-console 0.7.2 with native extensions
+#9 15.55 Fetching docile 1.4.1
+#9 15.61 Installing docile 1.4.1
+#9 15.65 Fetching formatador 1.1.0
+#9 15.78 Installing formatador 1.1.0
+#9 16.02 Fetching rb-fsevent 0.11.2
+#9 16.16 Installing rb-fsevent 0.11.2
+#9 16.38 Fetching lumberjack 1.2.10
+#9 16.59 Installing lumberjack 1.2.10
+#9 16.86 Fetching nenv 0.3.0
+#9 16.96 Installing nenv 0.3.0
+#9 17.03 Fetching shellany 0.0.1
+#9 17.19 Installing shellany 0.0.1
+#9 17.29 Fetching method_source 1.0.0
+#9 17.36 Installing method_source 1.0.0
+#9 17.40 Fetching thor 1.3.1
+#9 17.49 Installing thor 1.3.1
+#9 17.65 Fetching guard-compat 1.2.1
+#9 17.79 Installing guard-compat 1.2.1
+#9 17.88 Fetching mini_magick 4.12.0
+#9 18.00 Installing mini_magick 4.12.0
+#9 18.11 Fetching zeitwerk 2.6.13
+#9 18.20 Installing zeitwerk 2.6.13
+#9 18.24 Fetching ruby-progressbar 1.13.0
+#9 18.37 Installing ruby-progressbar 1.13.0
+#9 18.46 Fetching pg 1.3.5
+#9 18.63 Installing pg 1.3.5 with native extensions
+#9 20.49 Fetching rexml 3.2.6
+#9 21.98 Fetching rubyzip 2.3.2
+#9 22.03 Installing rubyzip 2.3.2
+#9 22.10 Installing rexml 3.2.6
+#9 22.14 Fetching tilt 2.3.0
+#9 22.20 Fetching websocket 1.2.10
+#9 22.26 Installing websocket 1.2.10
+#9 22.36 Fetching simplecov-html 0.13.1
+#9 22.43 Installing tilt 2.3.0
+#9 22.47 Installing simplecov-html 0.13.1
+#9 22.54 Fetching simplecov_json_formatter 0.1.4
+#9 22.59 Fetching sqlite3 1.5.0 (x86_64-linux)
+#9 22.61 Installing simplecov_json_formatter 0.1.4
+#9 22.63 Fetching websocket-driver 0.7.6
+#9 23.59 Installing websocket-driver 0.7.6 with native extensions
+#9 23.94 Installing sqlite3 1.5.0 (x86_64-linux)
+#9 24.57 Fetching addressable 2.8.6
+#9 24.75 Installing addressable 2.8.6
+#9 24.89 Fetching net-protocol 0.2.2
+#9 25.23 Installing net-protocol 0.2.2
+#9 25.35 Fetching aws-sigv4 1.8.0
+#9 25.42 Installing aws-sigv4 1.8.0
+#9 25.49 Fetching autoprefixer-rails 10.4.16.0
+#9 25.82 Fetching rack-test 2.1.0
+#9 25.93 Installing rack-test 2.1.0
+#9 25.97 Fetching i18n 1.14.4
+#9 26.06 Installing autoprefixer-rails 10.4.16.0
+#9 26.06 Installing i18n 1.14.4
+#9 26.26 Fetching tzinfo 2.0.6
+#9 26.40 Installing tzinfo 2.0.6
+#9 26.78 Fetching sprockets 4.2.1
+#9 26.78 Fetching bootstrap-will_paginate 1.0.0
+#9 27.05 Installing bootstrap-will_paginate 1.0.0
+#9 27.08 Installing sprockets 4.2.1
+#9 27.13 Fetching nokogiri 1.16.3 (x86_64-linux)
+#9 27.28 Fetching notiffany 0.1.3
+#9 27.67 Installing notiffany 0.1.3
+#9 27.76 Fetching pry 0.14.2
+#9 27.91 Installing pry 0.14.2
+#9 28.42 Fetching guard-minitest 2.4.6
+#9 28.58 Installing guard-minitest 2.4.6
+#9 28.69 Fetching minitest-reporters 1.5.0
+#9 28.71 Installing nokogiri 1.16.3 (x86_64-linux)
+#9 28.83 Installing minitest-reporters 1.5.0
+#9 29.06 Fetching psych 5.1.2
+#9 29.15 Installing psych 5.1.2 with native extensions
+#9 30.07 Fetching selenium-webdriver 4.2.0
+#9 30.20 Installing selenium-webdriver 4.2.0
+#9 30.44 Fetching simplecov 0.22.0
+#9 30.71 Fetching net-pop 0.1.2
+#9 30.78 Installing net-pop 0.1.2
+#9 30.78 Installing simplecov 0.22.0
+#9 30.82 Fetching net-smtp 0.5.0
+#9 30.92 Fetching aws-sdk-core 3.191.5
+#9 30.93 Installing net-smtp 0.5.0
+#9 30.99 Fetching faker 2.21.0
+#9 31.34 Installing aws-sdk-core 3.191.5
+#9 31.98 Installing faker 2.21.0
+#9 33.86 Fetching activesupport 7.0.4
+#9 34.17 Fetching loofah 2.22.0
+#9 34.26 Installing activesupport 7.0.4
+#9 34.36 Installing loofah 2.22.0
+#9 34.65 Fetching xpath 3.2.0
+#9 34.80 Installing xpath 3.2.0
+#9 34.91 Fetching webdrivers 5.0.0
+#9 35.23 Installing webdrivers 5.0.0
+#9 35.57 Fetching reline 0.5.0
+#9 35.84 Installing reline 0.5.0
+#9 35.99 Fetching puma 5.6.4
+#9 36.21 Fetching aws-sdk-kms 1.78.0
+#9 36.45 Installing puma 5.6.4 with native extensions
+#9 36.89 Installing aws-sdk-kms 1.78.0
+#9 37.01 Fetching rails-html-sanitizer 1.6.0
+#9 37.04 Fetching capybara 3.37.1
+#9 37.24 Installing rails-html-sanitizer 1.6.0
+#9 37.40 Fetching rails-dom-testing 2.2.0
+#9 37.50 Installing capybara 3.37.1
+#9 37.50 Installing rails-dom-testing 2.2.0
+#9 37.66 Fetching globalid 1.2.1
+#9 37.83 Installing globalid 1.2.1
+#9 37.88 Fetching activemodel 7.0.4
+#9 37.98 Installing activemodel 7.0.4
+#9 38.12 Fetching aws-sdk-s3 1.114.0
+#9 38.35 Installing aws-sdk-s3 1.114.0
+#9 38.48 Fetching actionview 7.0.4
+#9 38.59 Fetching activejob 7.0.4
+#9 38.60 Installing actionview 7.0.4
+#9 38.66 Installing activejob 7.0.4
+#9 38.77 Fetching activerecord 7.0.4
+#9 38.85 Fetching actionpack 7.0.4
+#9 39.00 Installing activerecord 7.0.4
+#9 39.07 Installing actionpack 7.0.4
+#9 39.37 Fetching jbuilder 2.11.5
+#9 39.57 Installing jbuilder 2.11.5
+#9 39.65 Fetching actioncable 7.0.4
+#9 39.67 Fetching railties 7.0.4
+#9 39.81 Installing actioncable 7.0.4
+#9 39.86 Fetching rails-controller-testing 1.0.5
+#9 39.93 Installing rails-controller-testing 1.0.5
+#9 39.97 Fetching sprockets-rails 3.4.2
+#9 40.02 Installing sprockets-rails 3.4.2
+#9 40.04 Fetching activestorage 7.0.4
+#9 40.10 Installing activestorage 7.0.4
+#9 40.17 Fetching actiontext 7.0.4
+#9 40.23 Installing actiontext 7.0.4
+#9 40.27 Fetching active_storage_validations 0.9.8
+#9 40.36 Fetching rdoc 6.6.3.1
+#9 40.38 Installing active_storage_validations 0.9.8
+#9 40.87 Installing rdoc 6.6.3.1
+#9 41.10 Fetching irb 1.12.0
+#9 41.20 Installing irb 1.12.0
+#9 41.36 Fetching debug 1.5.0
+#9 41.47 Installing debug 1.5.0 with native extensions
+#9 42.92 Fetching bootsnap 1.12.0
+#9 42.98 Installing bootsnap 1.12.0 with native extensions
+#9 44.77 Installing railties 7.0.4
+#9 45.47 Fetching importmap-rails 1.1.0
+#9 45.47 Fetching stimulus-rails 1.0.4
+#9 45.49 Fetching turbo-rails 1.1.1
+#9 45.58 Installing importmap-rails 1.1.0
+#9 45.62 Installing turbo-rails 1.1.1
+#9 45.66 Fetching web-console 4.2.0
+#9 45.77 Installing stimulus-rails 1.0.4
+#9 50.78 Installing web-console 4.2.0
+#9 53.27 Fetching net-imap 0.4.10
+#9 53.34 Installing net-imap 0.4.10
+#9 53.41 Fetching mail 2.8.1
+#9 53.57 Installing mail 2.8.1
+#9 53.87 Fetching actionmailbox 7.0.4
+#9 53.87 Fetching actionmailer 7.0.4
+#9 53.95 Installing actionmailbox 7.0.4
+#9 53.99 Installing actionmailer 7.0.4
+#9 54.12 Fetching rails 7.0.4
+#9 54.20 Installing rails 7.0.4
+#9 54.51 Fetching rb-inotify 0.10.1
+#9 54.52 Fetching sassc 2.4.0
+#9 54.52 Fetching ruby-vips 2.2.1
+#9 54.58 Installing rb-inotify 0.10.1
+#9 54.64 Installing ruby-vips 2.2.1
+#9 54.67 Fetching listen 3.9.0
+#9 54.74 Installing sassc 2.4.0 with native extensions
+#9 54.81 Installing listen 3.9.0
+#9 54.82 Fetching image_processing 1.12.2
+#9 54.90 Installing image_processing 1.12.2
+#9 54.92 Fetching guard 2.18.0
+#9 55.15 Installing guard 2.18.0
+#9 CANCELED
+ERROR: failed to solve: Canceled: context canceled
