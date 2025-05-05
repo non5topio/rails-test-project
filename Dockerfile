@@ -27,3 +27,5 @@ CMD ["bash", "-c", "bundle exec rails db:test:prepare && COVERAGE=true bundle ex
 
 # Expose default Rails port
 EXPOSE 3000
+
+##
